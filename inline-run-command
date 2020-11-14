@@ -1,0 +1,19 @@
+conda activate Mask_RCNN
+
+export PYTHONPATH=$PYTHONPATH:/home/berry/projects/models
+
+
+python3 ~/projects/models/official/vision/detection/main.py   --model_dir=~/projects/herbaria/models/training   --strategy_type=one_device   --num_gpus=1   --mode=train   --model=mask_rcnn   --params_override="eval:
+ eval_file_pattern: /home/berry/datasets/train.record
+ batch_size: 1
+ val_json_file: test_10_full_masks.json
+architecture:
+ use_bfloat16: False
+train:
+ total_steps: 1000
+ batch_size: 1
+ train_file_pattern: /home/berry/datasets/test.record
+use_tpu: False
+"
+
+
