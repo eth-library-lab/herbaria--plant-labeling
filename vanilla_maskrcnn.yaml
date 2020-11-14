@@ -1,5 +1,0 @@
-train:
-  train_file_pattern: /home/berry/datasets/train.record
-eval:
-  eval_file_pattern: /home/berry/datasets/test.record
-  val_json_file: <path to the validation annotation JSON file>
