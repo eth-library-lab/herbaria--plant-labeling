@@ -30,5 +30,5 @@ ipython_config.py
 *.jpg
 /OLD_to_remove/
 /testing/
-/data/
+
 /src/Mask_RCNN/
